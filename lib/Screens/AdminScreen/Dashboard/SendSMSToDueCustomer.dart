@@ -45,7 +45,7 @@ class _SendSMSToDueCustomerState extends State<SendSMSToDueCustomer> {
     FocusNode myFocusNode = new FocusNode();
 
  
-  DueCustomerMsgController.text = "Dear Customer,ORTHEE BAJAJ MART ${widget.CustomerPhoneNumber} Ac No. এ ${widget.BikePaymentDue}৳ টাকা বকেয়া আছে। ${widget.BikeDuePaymentGivingDay}/${DateTime.now().month.toString()}/${DateTime.now().year.toString()} তারিখের মধ্যে পরিশোধ করুন। ধন্যবাদ";
+  DueCustomerMsgController.text = "Dear Customer,A-ONE IMPEX ${widget.CustomerPhoneNumber} Ac No. এ ${widget.BikePaymentDue}৳ টাকা বকেয়া আছে। ${widget.BikeDuePaymentGivingDay}/${DateTime.now().month.toString()}/${DateTime.now().year.toString()} তারিখের মধ্যে পরিশোধ করুন। ধন্যবাদ";
 
    
 

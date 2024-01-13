@@ -1213,7 +1213,7 @@ try {
 
 
 
-    var customerMsg = "Dear Customer,ORTHEE BAJAJ MART থেকে ${BikeBillPay} টাকা পরিশোধ করে ${BikeName} Bike ক্রয় করেছেন। Thank You";
+    var customerMsg = "Dear Customer,A-ONE IMPEX থেকে ${BikeBillPay} টাকা পরিশোধ করে ${BikeName} Bike ক্রয় করেছেন। Thank You";
 
 
 
@@ -1260,12 +1260,12 @@ Future SendSMSToAdmin(String AdminPhoneNumber, String CustomerPhoneNumber, Strin
 
 
 
-    var AdminMsg = "Dear Admin, ORTHEE BAJAJ MART থেকে ${BikeBillPay} টাকা পরিশোধ করে ${BikeName} Bike ক্রয় করেছেন। Phone no:$CustomerPhoneNumber}";
+    var AdminMsg = "Dear Admin, A-ONE IMPEX থেকে ${BikeBillPay} টাকা পরিশোধ করে ${BikeName} Bike ক্রয় করেছেন। Phone no:$CustomerPhoneNumber}";
 
 
 
   final response = await http
-      .get(Uri.parse('https://api.greenweb.com.bd/api.php?token=1024519252916991043295858a1b3ac3cb09ae52385b1489dff95&to=01919517496&message=${AdminMsg}'));
+      .get(Uri.parse('https://api.greenweb.com.bd/api.php?token=1024519252916991043295858a1b3ac3cb09ae52385b1489dff95&to=01721915550&message=${AdminMsg}'));
 
   if (response.statusCode == 200) {
     // If the server did return a 200 OK response,

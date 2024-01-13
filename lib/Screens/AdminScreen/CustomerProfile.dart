@@ -1209,7 +1209,7 @@ void dispose() {
 
 
 
-                        var customerMsg = "Dear Customer, From Orthee Bajaj Mart আপনার বিক্রিত ১ টি গাড়ির Ownership পরিবর্তন হয়েছে। ধন্যবাদ";
+                        var customerMsg = "Dear Customer, From A-ONE IMPEX আপনার বিক্রিত ১ টি গাড়ির Ownership পরিবর্তন হয়েছে। ধন্যবাদ";
 
 
 
@@ -1237,7 +1237,7 @@ void dispose() {
 
 
                         
-                 var NewOwnerMsg = "Dear New Owner, From Orthee Bajaj Mart OwnerShip is Changed Successfully. Thank you.";
+                 var NewOwnerMsg = "Dear New Owner, From A-ONE IMPEX OwnerShip is Changed Successfully. Thank you.";
 
 
 
@@ -1869,7 +1869,7 @@ void dispose() {
 
 
 
-                        var customerMsg = "Dear Customer From Orthee Bajaj Showroom ${AllSaleData[i]["CustomerNID"]} Account No এ ${DueAmountController.text.trim()}৳ কিস্তি পরিশোধ করেছেন। ধন্যবাদ";
+                        var customerMsg = "Dear Customer From A One Impex Showroom ${AllSaleData[i]["CustomerNID"]} Account No এ ${DueAmountController.text.trim()}৳ কিস্তি পরিশোধ করেছেন। ধন্যবাদ";
 
 
 
@@ -1897,12 +1897,12 @@ void dispose() {
 
 
                         
-                 var AdminMsg = "Orthee Bajaj Showroom NID:${AllSaleData[i]["CustomerNID"]} ${DueAmountController.text.trim().toString()}৳ কিস্তি পরিশোধ করেছেন।${adminEmail} Admin টাকা জমা নিয়েছেন।";
+                 var AdminMsg = "A One Impex Showroom NID:${AllSaleData[i]["CustomerNID"]} ${DueAmountController.text.trim().toString()}৳ কিস্তি পরিশোধ করেছেন।${adminEmail} Admin টাকা জমা নিয়েছেন।";
 
 
 
                   final response = await http
-                      .get(Uri.parse('https://api.greenweb.com.bd/api.php?token=1024519252916991043295858a1b3ac3cb09ae52385b1489dff95&to=01919517496&message=${AdminMsg}'));
+                      .get(Uri.parse('https://api.greenweb.com.bd/api.php?token=1024519252916991043295858a1b3ac3cb09ae52385b1489dff95&to=01721915550&message=${AdminMsg}'));
 
                             try {
                                 if (response.statusCode == 200) {

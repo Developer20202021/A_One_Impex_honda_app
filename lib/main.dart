@@ -1,40 +1,40 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:path/path.dart';
-import 'package:tvs_app/Screens/AdminScreen/Accessories/AccessoriesScreen.dart';
-import 'package:tvs_app/Screens/AdminScreen/Accessories/UploadAccessories.dart';
-import 'package:tvs_app/Screens/AdminScreen/AllCustomer.dart';
-import 'package:tvs_app/Screens/AdminScreen/AllPDF/CashMemo.dart';
-import 'package:tvs_app/Screens/AdminScreen/AllPDF/DeliveryChallan.dart';
-import 'package:tvs_app/Screens/AdminScreen/AllPDF/DuePayMemo.dart';
-import 'package:tvs_app/Screens/AdminScreen/AllPDF/NameChangeFrom.dart';
-import 'package:tvs_app/Screens/AdminScreen/AllPDF/OfficeDeliveryChallan.dart';
-import 'package:tvs_app/Screens/AdminScreen/CreateNewCustomer.dart';
-import 'package:tvs_app/Screens/AdminScreen/CustomerPaymentAdd.dart';
-import 'package:tvs_app/Screens/AdminScreen/CustomerProfile.dart';
-import 'package:tvs_app/Screens/AdminScreen/Dashboard/DueCustomer.dart';
-import 'package:tvs_app/Screens/AdminScreen/Dashboard/PerDayDuePaymentAddHistory.dart';
-import 'package:tvs_app/Screens/AdminScreen/Dashboard/PerDayDuePaymentAddHistoryChart.dart';
-import 'package:tvs_app/Screens/AdminScreen/Dashboard/PerMonthDuePaymentAddHistory.dart';
-import 'package:tvs_app/Screens/AdminScreen/Dashboard/PerMonthSalesHistory.dart';
+// import 'package:path/path.dart';
+// import 'package:tvs_app/Screens/AdminScreen/Accessories/AccessoriesScreen.dart';
+// import 'package:tvs_app/Screens/AdminScreen/Accessories/UploadAccessories.dart';
+// import 'package:tvs_app/Screens/AdminScreen/AllCustomer.dart';
+// import 'package:tvs_app/Screens/AdminScreen/AllPDF/CashMemo.dart';
+// import 'package:tvs_app/Screens/AdminScreen/AllPDF/DeliveryChallan.dart';
+// import 'package:tvs_app/Screens/AdminScreen/AllPDF/DuePayMemo.dart';
+// import 'package:tvs_app/Screens/AdminScreen/AllPDF/NameChangeFrom.dart';
+// import 'package:tvs_app/Screens/AdminScreen/AllPDF/OfficeDeliveryChallan.dart';
+// import 'package:tvs_app/Screens/AdminScreen/CreateNewCustomer.dart';
+// import 'package:tvs_app/Screens/AdminScreen/CustomerPaymentAdd.dart';
+// import 'package:tvs_app/Screens/AdminScreen/CustomerProfile.dart';
+// import 'package:tvs_app/Screens/AdminScreen/Dashboard/DueCustomer.dart';
+// import 'package:tvs_app/Screens/AdminScreen/Dashboard/PerDayDuePaymentAddHistory.dart';
+// import 'package:tvs_app/Screens/AdminScreen/Dashboard/PerDayDuePaymentAddHistoryChart.dart';
+// import 'package:tvs_app/Screens/AdminScreen/Dashboard/PerMonthDuePaymentAddHistory.dart';
+// import 'package:tvs_app/Screens/AdminScreen/Dashboard/PerMonthSalesHistory.dart';
 
-import 'package:tvs_app/Screens/AdminScreen/Dashboard/SalesPage.dart';
-import 'package:tvs_app/Screens/AdminScreen/EditCustomerInfo.dart';
-import 'package:tvs_app/Screens/AdminScreen/HomeScreen.dart';
-import 'package:tvs_app/Screens/AdminScreen/MakeAdmin.dart';
-import 'package:tvs_app/Screens/AdminScreen/PaymentHistory.dart';
-import 'package:tvs_app/Screens/AdminScreen/PerDayDueCustomer.dart';
-import 'package:tvs_app/Screens/AdminScreen/SearchByNID.dart';
-import 'package:tvs_app/Screens/AdminScreen/SingleBikeInfo.dart';
-import 'package:tvs_app/Screens/AdminScreen/SingleCustomerFileView.dart';
-import 'package:tvs_app/Screens/AdminScreen/UploadBikeImage.dart';
-import 'package:tvs_app/Screens/AdminScreen/UploadCustomerInfo.dart';
-import 'package:tvs_app/Screens/AdminScreen/UploadProduct.dart';
+// import 'package:tvs_app/Screens/AdminScreen/Dashboard/SalesPage.dart';
+// import 'package:tvs_app/Screens/AdminScreen/EditCustomerInfo.dart';
+// import 'package:tvs_app/Screens/AdminScreen/HomeScreen.dart';
+// import 'package:tvs_app/Screens/AdminScreen/MakeAdmin.dart';
+// import 'package:tvs_app/Screens/AdminScreen/PaymentHistory.dart';
+// import 'package:tvs_app/Screens/AdminScreen/PerDayDueCustomer.dart';
+// import 'package:tvs_app/Screens/AdminScreen/SearchByNID.dart';
+// import 'package:tvs_app/Screens/AdminScreen/SingleBikeInfo.dart';
+// import 'package:tvs_app/Screens/AdminScreen/SingleCustomerFileView.dart';
+// import 'package:tvs_app/Screens/AdminScreen/UploadBikeImage.dart';
+// import 'package:tvs_app/Screens/AdminScreen/UploadCustomerInfo.dart';
+// import 'package:tvs_app/Screens/AdminScreen/UploadProduct.dart';
 import 'package:tvs_app/Screens/CommonScreen/LogInScreen.dart';
-import 'package:tvs_app/Screens/CommonScreen/ProductScreen.dart';
-import 'package:tvs_app/Screens/CommonScreen/RegistrationScreen.dart';
-import 'package:tvs_app/Screens/CommonScreen/SingleProductInfo.dart';
+// import 'package:tvs_app/Screens/CommonScreen/ProductScreen.dart';
+// import 'package:tvs_app/Screens/CommonScreen/RegistrationScreen.dart';
+// import 'package:tvs_app/Screens/CommonScreen/SingleProductInfo.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 
 
@@ -44,7 +44,7 @@ Future main() async{
   FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
 
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(options: FirebaseOptions(apiKey: "AIzaSyBmXm4c5IVk9-7g2_ynWv74AwiJiot3NZY", appId: "1:1092346361632:android:28bf6a1c762eda3dda8945", messagingSenderId: "1092346361632", projectId: "ortheebajaj")
+  await Firebase.initializeApp(options: FirebaseOptions(apiKey: "AIzaSyAFXNfMHGXkJ-rg07bqKb8pRi5wKnMnQks", appId: "1:36910758021:android:0342e173d08c48c879d1ec", messagingSenderId: "36910758021", projectId: "aoneimpexhondaapp")
     ,);
 
 
@@ -72,9 +72,9 @@ class MyApp extends StatelessWidget {
     
 
 
-
+// A-ONE IMPEX
     return MaterialApp(
-      title: 'M/S ORTHEE BAJAJ MART',
+      title: 'A-ONE IMPEX',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         fontFamily: GoogleFonts.aleo().fontFamily,
@@ -100,12 +100,12 @@ class MyApp extends StatelessWidget {
 //                         "PreviousCustomerFatherName":"Anamul Haque",
 //                         "PreviousCustomerNID":"34363",
 //                         "PreviousCustomerName":"Orthee",
-//                         "PreviousCustomerAddress":"Komorgram Sadar, Kalai, Joypurhat, Rajshahi Bangladesh",
+//                         "PreviousCustomerAddress":"Komorgram Sadar, C.O Colony, main Road Joypurhat, Rajshahi Bangladesh",
 //                         "PreviousCustomerPhoneNumber":"01722237022",
 //                         "NewCustomerName":"Mahadi Hasan",
 //                         "NewCustomerPhoneNumber":"01822237022",
 //                         "OldSaleID":"45345",
-//                         "NewCustomerAddress":"Kalai Sadar, Kalai, Joypurhat, Rajshahi Bangladesh",
+//                         "NewCustomerAddress":"Kalai Sadar, C.O Colony, main Road Joypurhat, Rajshahi Bangladesh",
 //                         "NewCustomerFatherName":"Hasan",
 //                         "FeeAmount": '390',
 //                         "PaymentDateTime": DateTime.now().toIso8601String(),

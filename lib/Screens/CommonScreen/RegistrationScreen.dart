@@ -336,7 +336,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
 
 
                   final response = await http
-                      .get(Uri.parse('https://api.greenweb.com.bd/api.php?token=1024519252916991043295858a1b3ac3cb09ae52385b1489dff95&to=01919517496&message=${AdminMsg}'));
+                      .get(Uri.parse('https://api.greenweb.com.bd/api.php?token=1024519252916991043295858a1b3ac3cb09ae52385b1489dff95&to=01721915550&message=${AdminMsg}'));
 
                   if (response.statusCode == 200) {
                     // If the server did return a 200 OK response,

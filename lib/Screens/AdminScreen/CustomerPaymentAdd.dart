@@ -444,12 +444,12 @@ class _CustomerPaymentAddState extends State<CustomerPaymentAdd> {
 
 
 
-                 var AdminMsg = "Dear Admin, TVS কালাই শোরুমে NID:${widget.CustomerNID} ${PaidAmountController.text}৳ কিস্তি পরিশোধ করেছেন।${user.email} Admin টাকা জমা নিয়েছেন।";
+                 var AdminMsg = "Dear Admin, আপনার শোরুমে NID:${widget.CustomerNID} ${PaidAmountController.text}৳ কিস্তি পরিশোধ করেছেন।${user.email} Admin টাকা জমা নিয়েছেন।";
 
 
 
                   final response = await http
-                      .get(Uri.parse('https://api.greenweb.com.bd/api.php?token=1024519252916991043295858a1b3ac3cb09ae52385b1489dff95&to=01919517496&message=${AdminMsg}'));
+                      .get(Uri.parse('https://api.greenweb.com.bd/api.php?token=1024519252916991043295858a1b3ac3cb09ae52385b1489dff95&to=01721915550&message=${AdminMsg}'));
 
                   if (response.statusCode == 200) {
                     // If the server did return a 200 OK response,

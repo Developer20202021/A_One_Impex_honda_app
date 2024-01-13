@@ -405,7 +405,7 @@ pdf.addPage(pw.Page(
 
                     pw.Text("For and on behalf of",style: pw.TextStyle(fontSize: 12, color: PdfColors.black)),
 
-                    pw.Text("M/S ORTHEE BAJAJ MART",style: pw.TextStyle(fontSize: 19, color: PdfColors.blue700, )),
+                    pw.Text("A-ONE IMPEX",style: pw.TextStyle(fontSize: 19, color: PdfColors.blue700, )),
 
 
                   ])
