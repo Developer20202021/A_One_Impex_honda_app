@@ -1028,7 +1028,7 @@ setState(() {
     ),
         iconTheme: IconThemeData(color: Theme.of(context).primaryColor),
       //  automaticallyImplyLeading: false,
-        title:  Text("Dashboard   V: 24.3.2 (Live)", style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),),
+        title:  Text("Dashboard   V: 34.13.4 (Live)", style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),),
         backgroundColor: Colors.transparent,
         bottomOpacity: 0.0,
         elevation: 0.0,

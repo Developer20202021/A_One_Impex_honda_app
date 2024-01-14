@@ -294,7 +294,7 @@ void dispose() {
                 
                 Center(
                   child: Lottie.asset(
-                  'lib/images/Animation - 1703302209974.json',
+                  'lib/images/logIn_animation_1.json',
                     fit: BoxFit.cover,
                     width: 200,
                     height: 200

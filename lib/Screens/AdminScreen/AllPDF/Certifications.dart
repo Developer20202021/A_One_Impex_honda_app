@@ -83,7 +83,7 @@ class _CertificationPDFPreviewState extends State<CertificationPDFPreview> {
 
 Future<Uint8List> makePdf(List SalesData) async {
 
-final netImage = await networkImage('https://i.ibb.co/SR6tHQt/bajaj-logo.jpg');
+final netImage = await networkImage('https://i.ibb.co/mqRKMyy/pngwing-com-4.png');
 
 // final backImage = await networkImage('https://i.ibb.co/yfvj470/pngwing-com.png');
 
@@ -111,7 +111,7 @@ final swirls2 = await rootBundle.loadString('lib/images/swirls2.svg');
 // Uint8List imageData = (image).buffer.asUint8List();
 
 
-final font = await rootBundle.load("lib/fonts/JosefinSans-BoldItalic.ttf");
+final font = await rootBundle.load("lib/fonts/Bungee-Regular.ttf");
 final ttf = pw.Font.ttf(font);
 
 final Banglafont = await rootBundle.load("lib/fonts/Siyam-Rupali-ANSI.ttf");
@@ -128,7 +128,7 @@ pdf.addPage(pw.Page(
        margin: const pw.EdgeInsets.all(10),
             decoration: pw.BoxDecoration(
               border: pw.Border.all(
-                  color: const PdfColor.fromInt(0xcc7722), width: 1),
+                  color: const PdfColor.fromInt(0xf44336), width: 1),
             ),
 
       child:  pw.Container(
@@ -137,7 +137,7 @@ pdf.addPage(pw.Page(
               decoration: pw.BoxDecoration(
                 
                 border: pw.Border.all(
-                    color: const PdfColor.fromInt(0xcc7722), width: 5),
+                    color: const PdfColor.fromInt(0xf44336), width: 5),
               ),
               width: double.infinity,
               height: double.infinity,
@@ -210,7 +210,7 @@ pdf.addPage(pw.Page(
     ))
   ),
   
-  // theme: pw.ThemeData.withFont(base: pw.Font.ttf(await rootBundle.load("lib/fonts/JosefinSans-BoldItalic.ttf")),),
+  // theme: pw.ThemeData.withFont(base: pw.Font.ttf(await rootBundle.load("lib/fonts/Bungee-Regular.ttf")),),
   //     pageFormat: PdfPageFormat.a4,
       build: (pw.Context context) {
         return pw.Center(
@@ -240,7 +240,7 @@ pdf.addPage(pw.Page(
 
                    pw.SizedBox(height: 6),
 
-                  pw.Center(child: pw.Text("Mobile: 01712010961, 01883886640,01790101070,01883886650", style:pw.TextStyle(fontSize: 9,  font: ttf)),),
+                  pw.Center(child: pw.Text("Mobile: 01712010961, 01883886640,01790101070", style:pw.TextStyle(fontSize: 9,  font: ttf)),),
 
                   pw.SizedBox(height: 6),
                   // pw.Center(child: pw.Text("EIIN: 122026", style:pw.TextStyle(fontSize: 11,  font: ttf)),),
@@ -272,7 +272,7 @@ pdf.addPage(pw.Page(
                             topLeft: pw.Radius.circular(10.0),
                             bottomLeft: pw.Radius.circular(10.0),
                             bottomRight: pw.Radius.circular(10.0)),
-                        color: PdfColor.fromInt(0xcc7722),
+                        color: PdfColor.fromInt(0xf44336),
                       ),
                 
                 
@@ -306,7 +306,7 @@ pdf.addPage(pw.Page(
                             topLeft: pw.Radius.circular(10.0),
                             bottomLeft: pw.Radius.circular(10.0),
                             bottomRight: pw.Radius.circular(10.0)),
-                        color: PdfColor.fromInt(0xcc7722),
+                        color: PdfColor.fromInt(0xf44336),
                       ),
                 
                 

@@ -83,7 +83,7 @@ final pdf = pw.Document();
 
 
 pdf.addPage(pw.Page(
-  theme: pw.ThemeData.withFont(base: pw.Font.ttf(await rootBundle.load("lib/fonts/JosefinSans-BoldItalic.ttf")),),
+  theme: pw.ThemeData.withFont(base: pw.Font.ttf(await rootBundle.load("lib/fonts/Bungee-Regular.ttf")),),
       pageFormat: PdfPageFormat.a4,
       build: (pw.Context context) {
         return pw.Center(

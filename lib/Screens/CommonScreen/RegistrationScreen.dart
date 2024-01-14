@@ -12,6 +12,7 @@ import 'package:loading_animation_widget/loading_animation_widget.dart';
 import 'package:lottie/lottie.dart';
 import 'package:tvs_app/Screens/CommonScreen/LogInScreen.dart';
 import 'package:http/http.dart' as http;
+import 'package:flutter/foundation.dart' show kIsWeb;
 
 class RegistrationScreen extends StatefulWidget {
   const RegistrationScreen({super.key});
@@ -83,7 +84,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
     ),
         iconTheme: IconThemeData(color: Theme.of(context).primaryColor),
        automaticallyImplyLeading: false,
-        title: const Text("Create Your Account", style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),),
+        title: const Text("Registration", style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),),
         backgroundColor: Colors.transparent,
         bottomOpacity: 0.0,
         elevation: 0.0,
@@ -93,7 +94,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
       body: SingleChildScrollView(
 
               child:  loading?LinearProgressIndicator(color: Theme.of(context).primaryColor,):Padding(
-                padding: const EdgeInsets.all(8.0),
+                padding: EdgeInsets.only(left:kIsWeb?205:5, right: kIsWeb?205:5,),
                 child:Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -126,18 +127,18 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
 
             
                     
-                    // Center(
-                    //   child: Lottie.asset(
-                    //   'lib/images/animation_lk8g4ixk.json',
-                    //     fit: BoxFit.cover,
-                    //     width: 300,
-                    //     height: 200
-                    //   ),
-                    // ),
+                    Center(
+                      child: Lottie.asset(
+                      'lib/images/Registration_animation.json',
+                        fit: BoxFit.cover,
+                        width: 300,
+                        height: 200
+                      ),
+                    ),
             
-            // SizedBox(
-            //           height: 20,
-            //         ),
+            SizedBox(
+                      height: 20,
+                    ),
             
             
             

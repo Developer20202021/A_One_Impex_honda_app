@@ -83,13 +83,15 @@ class _CashMemoPDFViewState extends State<CashMemoPDFView> {
 
 Future<Uint8List> makePdf(List SalesData) async {
 
-final netImage = await networkImage('https://i.ibb.co/SR6tHQt/bajaj-logo.jpg');
+final netImage = await networkImage('https://i.ibb.co/mqRKMyy/pngwing-com-4.png');
 
-final backImage = await networkImage('https://i.ibb.co/kmsjjWz/pngwing-com-1.png');
-
-
+final backImage = await networkImage('https://i.ibb.co/0f26g8Z/pngwing-com-6.png');
 
 
+// https://i.ibb.co/0f26g8Z/pngwing-com-6.png
+
+
+// https://i.ibb.co/kmsjjWz/pngwing-com-1.png
 
 
 
@@ -111,7 +113,7 @@ final swirls2 = await rootBundle.loadString('lib/images/swirls2.svg');
 // Uint8List imageData = (image).buffer.asUint8List();
 
 
-final font = await rootBundle.load("lib/fonts/JosefinSans-BoldItalic.ttf");
+final font = await rootBundle.load("lib/fonts/Bungee-Regular.ttf");
 final ttf = pw.Font.ttf(font);
 
 final Banglafont = await rootBundle.load("lib/fonts/Siyam-Rupali-ANSI.ttf");
@@ -128,7 +130,7 @@ pdf.addPage(pw.Page(
        margin: const pw.EdgeInsets.all(10),
             decoration: pw.BoxDecoration(
               // border: pw.Border.all(
-              //     color: const PdfColor.fromInt(0xcc7722), width: 1),
+              //     color: const PdfColor.fromInt(0xf44336), width: 1),
             ),
 
       child:  pw.Container(
@@ -137,7 +139,7 @@ pdf.addPage(pw.Page(
               decoration: pw.BoxDecoration(
                 
                 // border: pw.Border.all(
-                //     color: const PdfColor.fromInt(0xcc7722), width: 5),
+                //     color: const PdfColor.fromInt(0xf44336), width: 5),
               ),
               width: double.infinity,
               height: double.infinity,
@@ -210,7 +212,7 @@ pdf.addPage(pw.Page(
     ))
   ),
   
-  // theme: pw.ThemeData.withFont(base: pw.Font.ttf(await rootBundle.load("lib/fonts/JosefinSans-BoldItalic.ttf")),),
+  // theme: pw.ThemeData.withFont(base: pw.Font.ttf(await rootBundle.load("lib/fonts/Bungee-Regular.ttf")),),
   //     pageFormat: PdfPageFormat.a4,
       build: (pw.Context context) {
         return pw.Center(
@@ -232,15 +234,15 @@ pdf.addPage(pw.Page(
                   child: pw.Column(children: [
 
 
-                  pw.Text("M/S. A-ONE IMPEX", style:pw.TextStyle(fontSize: 21, fontWeight: pw.FontWeight.bold, font: ttf, color: PdfColor.fromInt(0xffffff))),
-                  pw.Text("G-Iqvb Bg‡c·", style:pw.TextStyle(fontSize: 14, fontWeight: pw.FontWeight.bold, font: Banglattf, color: PdfColor.fromInt(0xffffff))),
-                  pw.Center(child: pw.Text("", style:pw.TextStyle(fontSize: 12, fontWeight: pw.FontWeight.bold, font: ttf, color: PdfColor.fromInt(0xffffff))),),
+                  pw.Text("M/S. A-ONE IMPEX", style:pw.TextStyle(fontSize: 21, fontWeight: pw.FontWeight.bold, font: ttf, color: PdfColor.fromInt(0x000000))),
+                  pw.Text("G-Iqvb Bg‡c·", style:pw.TextStyle(fontSize: 14, fontWeight: pw.FontWeight.bold, font: Banglattf, color: PdfColor.fromInt(0x000000))),
+                  pw.Center(child: pw.Text("", style:pw.TextStyle(fontSize: 12, fontWeight: pw.FontWeight.bold, font: ttf, color: PdfColor.fromInt(0x000000))),),
 
-                  pw.Center(child: pw.Text("C.O Colony, main Road Joypurhat", style:pw.TextStyle(fontSize: 11, fontWeight: pw.FontWeight.bold, font: ttf, color: PdfColor.fromInt(0xffffff))),),
+                  pw.Center(child: pw.Text("C.O Colony, main Road Joypurhat", style:pw.TextStyle(fontSize: 11, fontWeight: pw.FontWeight.bold, font: ttf, color: PdfColor.fromInt(0x000000))),),
 
                    pw.SizedBox(height: 6),
 
-                  pw.Center(child: pw.Text("Mobile: 01712010961, 01883886640,01790101070,01883886650", style:pw.TextStyle(fontSize: 10,  font: ttf, color: PdfColor.fromInt(0xffffff))),),
+                  pw.Center(child: pw.Text("Mobile: 01712010961, 01883886640,01790101070", style:pw.TextStyle(fontSize: 10,  font: ttf, color: PdfColor.fromInt(0x000000))),),
 
                   pw.SizedBox(height: 6),
                   // pw.Center(child: pw.Text("EIIN: 122026", style:pw.TextStyle(fontSize: 11,  font: ttf)),),
@@ -264,21 +266,21 @@ pdf.addPage(pw.Page(
               ),
 
 
-              pw.Container(
-                width: 650,
-                height: 20,
-                 decoration: const pw.BoxDecoration(
-                        borderRadius: pw.BorderRadius.only(
-                            topRight: pw.Radius.circular(10.0),
-                            topLeft: pw.Radius.circular(10.0),
-                            bottomLeft: pw.Radius.circular(10.0),
-                            bottomRight: pw.Radius.circular(10.0)),
-                        color: PdfColor.fromInt(0x40b5ad),
-                      ),
+              // pw.Container(
+              //   width: 650,
+              //   height: 20,
+              //    decoration: const pw.BoxDecoration(
+              //           borderRadius: pw.BorderRadius.only(
+              //               topRight: pw.Radius.circular(10.0),
+              //               topLeft: pw.Radius.circular(10.0),
+              //               bottomLeft: pw.Radius.circular(10.0),
+              //               bottomRight: pw.Radius.circular(10.0)),
+              //           color: PdfColor.fromInt(0xf44336),
+              //         ),
                 
                 
                 
-                child: pw.Center(child: pw.Padding(padding: pw.EdgeInsets.all(3), child: pw.Text("mKj c«Kvi g‡W‡ji ‡nvÛv ‡gvUi mvB‡Kj weµ‡qi wek¦¯— c«wZôvb", style: pw.TextStyle(fontSize: 10, color: PdfColors.white, font: Banglattf))))),
+              //   child: pw.Center(child: pw.Padding(padding: pw.EdgeInsets.all(3), child: pw.Text("mKj c«Kvi g‡W‡ji ‡nvÛv ‡gvUi mvB‡Kj weµ‡qi wek¦¯— c«wZôvb", style: pw.TextStyle(fontSize: 10, color: PdfColors.white, font: Banglattf))))),
 
 
               // pw.Center(child:  pw.Image(netImage, height: 150, width: 250, ),),
@@ -307,7 +309,7 @@ pdf.addPage(pw.Page(
                             topLeft: pw.Radius.circular(10.0),
                             bottomLeft: pw.Radius.circular(10.0),
                             bottomRight: pw.Radius.circular(10.0)),
-                        color: PdfColor.fromInt(0x40b5ad),
+                        color: PdfColor.fromInt(0xf44336),
                       ),
                 
                 
@@ -358,7 +360,7 @@ pdf.addPage(pw.Page(
                 width: 300,
                 decoration:  pw.BoxDecoration(
                 border: pw.Border(bottom: pw.BorderSide(width: 1, style: pw.BorderStyle.dashed))),
-                    child: pw.Padding(padding: pw.EdgeInsets.only(bottom: 5, left: 30),child: pw.Text("${SalesData[0]["CustomerName"]}", style: pw.TextStyle(fontSize: 14,))))
+                    child: pw.Padding(padding: pw.EdgeInsets.only(bottom: 5, left: 30),child: pw.Text("${SalesData[0]["CustomerName"].toString().toUpperCase()}", style: pw.TextStyle(fontSize: 14,))))
 
               ]),
 
