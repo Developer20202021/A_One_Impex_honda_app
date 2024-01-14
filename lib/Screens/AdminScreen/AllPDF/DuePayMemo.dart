@@ -85,7 +85,7 @@ Future<Uint8List> makePdf(List SalesData) async {
 
 final netImage = await networkImage('https://i.ibb.co/mqRKMyy/pngwing-com-4.png');
 
-final backImage = await networkImage('https://i.ibb.co/D1ph5dM/pngwing-com-3.png');
+final backImage = await networkImage('https://i.ibb.co/0f26g8Z/pngwing-com-6.png');
 
 
 
@@ -264,21 +264,21 @@ pdf.addPage(pw.Page(
               ),
 
 
-              pw.Container(
-                width: 650,
-                height: 20,
-                 decoration: const pw.BoxDecoration(
-                        borderRadius: pw.BorderRadius.only(
-                            topRight: pw.Radius.circular(10.0),
-                            topLeft: pw.Radius.circular(10.0),
-                            bottomLeft: pw.Radius.circular(10.0),
-                            bottomRight: pw.Radius.circular(10.0)),
-                        color: PdfColor.fromInt(0x0096ff),
-                      ),
+              // pw.Container(
+              //   width: 650,
+              //   height: 20,
+              //    decoration: const pw.BoxDecoration(
+              //           borderRadius: pw.BorderRadius.only(
+              //               topRight: pw.Radius.circular(10.0),
+              //               topLeft: pw.Radius.circular(10.0),
+              //               bottomLeft: pw.Radius.circular(10.0),
+              //               bottomRight: pw.Radius.circular(10.0)),
+              //           color: PdfColor.fromInt(0x0096ff),
+              //         ),
                 
                 
                 
-                child: pw.Center(child: pw.Padding(padding: pw.EdgeInsets.all(3), child: pw.Text("mKj c«Kvi g‡W‡ji ‡nvÛv ‡gvUi mvB‡Kj weµ‡qi wek¦¯— c«wZôvb", style: pw.TextStyle(fontSize: 10, color: PdfColors.white, font: Banglattf))))),
+              //   child: pw.Center(child: pw.Padding(padding: pw.EdgeInsets.all(3), child: pw.Text("mKj c«Kvi g‡W‡ji ‡nvÛv ‡gvUi mvB‡Kj weµ‡qi wek¦¯— c«wZôvb", style: pw.TextStyle(fontSize: 10, color: PdfColors.white, font: Banglattf))))),
 
 
               // pw.Center(child:  pw.Image(netImage, height: 150, width: 250, ),),
@@ -360,7 +360,7 @@ pdf.addPage(pw.Page(
                 width: 300,
                 decoration:  pw.BoxDecoration(
                 border: pw.Border(bottom: pw.BorderSide(width: 1, style: pw.BorderStyle.dashed))),
-                    child: pw.Padding(padding: pw.EdgeInsets.only(bottom: 5, left: 30),child: pw.Text("${SalesData[0]["CustomerName"]}", style: pw.TextStyle(fontSize: 14,))))
+                    child: pw.Padding(padding: pw.EdgeInsets.only(bottom: 5, left: 30),child: pw.Text("${SalesData[0]["CustomerName"].toString().toUpperCase()}", style: pw.TextStyle(fontSize: 14,))))
 
               ]),
 

@@ -9,7 +9,7 @@
 
 
     <application
-        android:label="Ortheebajaj"
+        android:label="AOneImpex"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
