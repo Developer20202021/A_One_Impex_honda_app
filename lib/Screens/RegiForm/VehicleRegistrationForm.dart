@@ -13,8 +13,10 @@ import 'package:loading_animation_widget/loading_animation_widget.dart';
 
 class VehicleRegistrationForm extends StatefulWidget {
 
+  final List SaleInfo;
+
   
-  const VehicleRegistrationForm({super.key,});
+  const VehicleRegistrationForm({super.key, required this.SaleInfo});
 
   @override
   State<VehicleRegistrationForm> createState() => _VehicleRegistrationFormState();
@@ -46,6 +48,27 @@ class _VehicleRegistrationFormState extends State<VehicleRegistrationForm> {
   bool loading = false;
 
 
+  void getSaleData(){
+
+    print(widget.SaleInfo);
+  }
+
+
+
+  @override
+  void initState() {
+    // TODO: implement initState
+
+
+
+
+      getSaleData();
+
+
+    super.initState();
+  }
+
+
 
 
 
@@ -55,6 +78,16 @@ class _VehicleRegistrationFormState extends State<VehicleRegistrationForm> {
 
   @override
   Widget build(BuildContext context) {
+
+
+    NameController.text = widget.SaleInfo[0]["CustomerName"];
+    FatherNameController.text = widget.SaleInfo[0]["CustomerFatherName"];
+    MotherNameController.text = widget.SaleInfo[0]["CustomerMotherName"];
+    NIDNoController.text = widget.SaleInfo[0]["CustomerNID"];
+    PresentAddressController.text = widget.SaleInfo[0]["CustomerAddress"];
+    PermanentAddressController.text = widget.SaleInfo[0]["CustomerAddress"];
+    CellPhoneNoController.text = widget.SaleInfo[0]["CustomerPhoneNumber"];
+    
 
 
 
@@ -93,7 +126,7 @@ class _VehicleRegistrationFormState extends State<VehicleRegistrationForm> {
             children: [
 
               TextField(
-                      maxLines: 5,
+                      
                       decoration: InputDecoration(
                           border: OutlineInputBorder(),
                           labelText: 'Name(BLOCK LETTER)',
@@ -119,7 +152,7 @@ class _VehicleRegistrationFormState extends State<VehicleRegistrationForm> {
 
 
                     TextField(
-                      maxLines: 5,
+                      
                       decoration: InputDecoration(
                           border: OutlineInputBorder(),
                           labelText: 'Fathers Name',
@@ -146,7 +179,7 @@ class _VehicleRegistrationFormState extends State<VehicleRegistrationForm> {
 
 
                     TextField(
-                      maxLines: 5,
+                      
                       decoration: InputDecoration(
                           border: OutlineInputBorder(),
                           labelText: 'Mothers Name',
@@ -173,7 +206,7 @@ class _VehicleRegistrationFormState extends State<VehicleRegistrationForm> {
 
 
                     TextField(
-                      maxLines: 5,
+                      
                       decoration: InputDecoration(
                           border: OutlineInputBorder(),
                           labelText: 'Husbands Name',
@@ -199,7 +232,7 @@ class _VehicleRegistrationFormState extends State<VehicleRegistrationForm> {
 
 
                     TextField(
-                      maxLines: 5,
+                      
                       decoration: InputDecoration(
                           border: OutlineInputBorder(),
                           labelText: 'Present Address',
@@ -226,7 +259,7 @@ class _VehicleRegistrationFormState extends State<VehicleRegistrationForm> {
 
 
                     TextField(
-                      maxLines: 5,
+                      
                       decoration: InputDecoration(
                           border: OutlineInputBorder(),
                           labelText: 'Permanent Address',
@@ -253,7 +286,7 @@ class _VehicleRegistrationFormState extends State<VehicleRegistrationForm> {
 
 
                     TextField(
-                      maxLines: 5,
+                      
                       decoration: InputDecoration(
                           border: OutlineInputBorder(),
                           labelText: 'SEX',
@@ -280,7 +313,7 @@ class _VehicleRegistrationFormState extends State<VehicleRegistrationForm> {
 
 
                     TextField(
-                      maxLines: 5,
+                      
                       decoration: InputDecoration(
                           border: OutlineInputBorder(),
                           labelText: 'Cell Phone No',
@@ -307,7 +340,7 @@ class _VehicleRegistrationFormState extends State<VehicleRegistrationForm> {
 
 
                     TextField(
-                      maxLines: 5,
+                      
                       decoration: InputDecoration(
                           border: OutlineInputBorder(),
                           labelText: 'Nationality',
@@ -334,7 +367,7 @@ class _VehicleRegistrationFormState extends State<VehicleRegistrationForm> {
 
 
                     TextField(
-                      maxLines: 5,
+                      
                       decoration: InputDecoration(
                           border: OutlineInputBorder(),
                           labelText: 'Date Of Birth',
@@ -363,7 +396,7 @@ class _VehicleRegistrationFormState extends State<VehicleRegistrationForm> {
 
 
                     TextField(
-                      maxLines: 5,
+                      
                       decoration: InputDecoration(
                           border: OutlineInputBorder(),
                           labelText: 'NID No',
@@ -390,7 +423,7 @@ class _VehicleRegistrationFormState extends State<VehicleRegistrationForm> {
 
 
                     TextField(
-                      maxLines: 5,
+                      
                       decoration: InputDecoration(
                           border: OutlineInputBorder(),
                           labelText: 'e-TIN No',
@@ -418,7 +451,7 @@ class _VehicleRegistrationFormState extends State<VehicleRegistrationForm> {
 
 
                     TextField(
-                      maxLines: 5,
+                      
                       decoration: InputDecoration(
                           border: OutlineInputBorder(),
                           labelText: 'Guardian Name',
@@ -445,7 +478,7 @@ class _VehicleRegistrationFormState extends State<VehicleRegistrationForm> {
 
 
                     TextField(
-                      maxLines: 5,
+                      
                       decoration: InputDecoration(
                           border: OutlineInputBorder(),
                           labelText: 'Vehicle Registration No',
@@ -472,7 +505,7 @@ class _VehicleRegistrationFormState extends State<VehicleRegistrationForm> {
 
 
                     // TextField(
-                    //   maxLines: 5,
+                    //   
                     //   decoration: InputDecoration(
                     //       border: OutlineInputBorder(),
                     //       labelText: 'Engine No',
@@ -499,7 +532,7 @@ class _VehicleRegistrationFormState extends State<VehicleRegistrationForm> {
 
 
                     // TextField(
-                    //   maxLines: 5,
+                    //   
                     //   decoration: InputDecoration(
                     //       border: OutlineInputBorder(),
                     //       labelText: 'Chassis No',
@@ -527,7 +560,7 @@ class _VehicleRegistrationFormState extends State<VehicleRegistrationForm> {
 
 
                     TextField(
-                      maxLines: 5,
+                      
                       decoration: InputDecoration(
                           border: OutlineInputBorder(),
                           labelText: 'Year Of MFG Of Vehicle',
@@ -554,7 +587,7 @@ class _VehicleRegistrationFormState extends State<VehicleRegistrationForm> {
 
 
                     TextField(
-                      maxLines: 5,
+                      
                       decoration: InputDecoration(
                           border: OutlineInputBorder(),
                           labelText: 'Prev Registration No',
@@ -582,7 +615,7 @@ class _VehicleRegistrationFormState extends State<VehicleRegistrationForm> {
 
 
                     TextField(
-                      maxLines: 5,
+                      
                       decoration: InputDecoration(
                           border: OutlineInputBorder(),
                           labelText: 'Bank Name for Fee/Tax Deposit',
