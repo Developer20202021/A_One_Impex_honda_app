@@ -6,6 +6,7 @@ import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:http/http.dart' as http;
 import 'package:loading_animation_widget/loading_animation_widget.dart';
+import 'package:tvs_app/Screens/AdminScreen/AllPDF/OwnerParticularReg.dart';
 
 
 
@@ -639,7 +640,45 @@ class _VehicleRegistrationFormState extends State<VehicleRegistrationForm> {
 
 
 
+              SizedBox(height: 10,),
 
+
+
+                OutlinedButton(
+                  onPressed: () {
+
+                    List AllSaleData =[{
+                      "CustomerName":NameController.text.trim(),
+                      "CustomerFatherName":FatherNameController.text.trim(),
+                      "CustomerMotherName":MotherNameController.text.trim(),
+                      "HusbandName":HusbandNameController.text.trim(),
+                      "PresentAddress":PresentAddressController.text.trim(),
+                      "PermanentAddress":PermanentAddressController.text.trim(),
+                      "Sex":SEXController.text.trim(),
+                      "CellPhoneNo":CellPhoneNoController.text.trim(),
+                      "Nationality":NationalityController.text.trim(),
+                      "DateOfBirth":DateOfBirthController.text.trim(),
+                      "NIDNo":NIDNoController.text.trim(),
+                      "ETINNo":eTINNoController.text.trim(),
+                      "GuardianName":GuardianNameController.text.trim(),
+                      "VehicleRegistrationNo":VehicleRegistrationNoController.text.trim(),
+                      "EngineNo":widget.SaleInfo[0]["BikeEngineNo"],
+                      "ChassisNo":widget.SaleInfo[0]["BikeChassisNo"],
+                      "YearOfMFG":YearOfMFGOfVehicleController.text.trim(),
+                      "PreviousReg":PrevRegistrationNoController.text.trim(),
+                      "BankNameForFee":BankNameforFeeTaxDepositController.text.trim()
+                    }];
+
+
+
+                    Navigator.push(
+                        context,MaterialPageRoute(builder: (context) => OwnerParticularRegPDF(SalesData: AllSaleData)),
+                      );
+                      
+
+                  },
+                  child: Text("Print"),
+                )
 
                     
               
