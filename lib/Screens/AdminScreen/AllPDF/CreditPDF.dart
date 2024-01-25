@@ -234,7 +234,7 @@ pdf.addPage(pw.Page(
                   child: pw.Column(children: [
 
 
-                  pw.Text("M/S. A-ONE IMPEX", style:pw.TextStyle(fontSize: 21, fontWeight: pw.FontWeight.bold, font: ttf, color: PdfColor.fromInt(0x000000))),
+                  pw.Text(" A-ONE IMPEX", style:pw.TextStyle(fontSize: 21, fontWeight: pw.FontWeight.bold, font: ttf, color: PdfColor.fromInt(0x000000))),
                   pw.Text("G-Iqvb Bg‡c·", style:pw.TextStyle(fontSize: 14, fontWeight: pw.FontWeight.bold, font: Banglattf, color: PdfColor.fromInt(0x000000))),
                   pw.Center(child: pw.Text("", style:pw.TextStyle(fontSize: 12, fontWeight: pw.FontWeight.bold, font: ttf, color: PdfColor.fromInt(0x000000))),),
 
